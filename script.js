@@ -51,16 +51,15 @@ botonesCancion.forEach((boton) => {
   });
 });
 
+// Tarjetas del dashboard (para que funcionen como botones)
 const tarjetasDashboard = document.querySelectorAll(".card-dashboard");
 
 tarjetasDashboard.forEach((tarjeta) => {
   tarjeta.addEventListener("click", () => {
     const pantallaDestino = tarjeta.getAttribute("data-pantalla");
+    if (!pantallaDestino) return;
 
-    if (pantallaDestino) {
-      pantallas.forEach((p) => p.classList.remove("activa"));
-      document.getElementById(pantallaDestino).classList.add("activa");
-    }
+    pantallas.forEach((p) => p.classList.remove("activa"));
+    document.getElementById(pantallaDestino).classList.add("activa");
   });
 });
-
