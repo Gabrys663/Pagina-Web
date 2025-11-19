@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gabrys & Luna - Letras</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="top-bar">
+      <h1>Gabrys & Luna</h1>
+      <p class="subtitulo">Letras y canciones</p>
+    </header>
+
+    <main>
+      <!-- PANTALLA INICIO -->
+      <section id="pantalla-inicio" class="pantalla activa">
+        <div class="tarjeta">
+          <h2>Menú principal</h2>
+          <p>Elige una opción:</p>
+          <div class="botones-menu">
+            <button class="boton" data-pantalla="pantalla-letras">Letras</button>
+            <!-- Más botones después: Créditos, Info, etc -->
+          </div>
+        </div>
+      </section>
+
+      <!-- PANTALLA LETRAS -->
+      <section id="pantalla-letras" class="pantalla">
+        <div class="tarjeta">
+          <button class="boton-volver" data-pantalla="pantalla-inicio">← Volver al menú</button>
+          <h2>Letras de canciones</h2>
+
+          <div class="layout-letras">
+            <div class="lista-canciones">
+              <h3>Selecciona una canción</h3>
+              <button class="boton cancion" data-cancion="cancion1">Canción 1 - Ejemplo</button>
+              <button class="boton cancion" data-cancion="cancion2">Canción 2 - Ejemplo</button>
+              <!-- Aquí luego agregamos más canciones reales -->
+            </div>
+
+            <div class="contenido-letra">
+              <h3 id="titulo-cancion">Sin canción seleccionada</h3>
+              <pre id="texto-cancion">
+Elige una canción de la lista para ver la letra aquí.
+              </pre>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
