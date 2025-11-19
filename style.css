@@ -8,7 +8,7 @@
 
 body {
   min-height: 100vh;
-  background: radial-gradient(circle at top, #222 0, #050509 60%);
+  background: #071a1d; /* Fondo sólido tipo Canva */
   color: #fff;
   display: flex;
   justify-content: center;
@@ -94,11 +94,12 @@ body {
 /* ---- DASHBOARD TIPO CANVA ---- */
 
 .dashboard {
-  background: #050b10;
+  background: #0e2427; /* Fondo más clarito como la imagen */
   border-radius: 30px;
   padding: 30px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
+  box-shadow: none; /* Como en la imagen */
 }
+
 
 .titulo-dashboard {
   font-size: 1.4rem;
@@ -153,3 +154,4 @@ body {
     grid-template-columns: 1fr;
   }
 }
+
