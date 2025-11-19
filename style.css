@@ -57,7 +57,7 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-/* Botones generales */
+/* Botones */
 .boton,
 .boton-volver {
   border: none;
@@ -91,7 +91,7 @@ body {
   margin-top: 15px;
 }
 
-/* ------------------ 🎨 DASHBOARD TIPO CANVA ------------------ */
+/* ---- DASHBOARD TIPO CANVA ---- */
 
 .dashboard {
   background: #050b10;
@@ -106,13 +106,14 @@ body {
   font-weight: 700;
 }
 
-/* TARJETAS */
+/* Grid de tarjetas */
 .grid-dashboard {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 18px;
 }
 
+/* Tarjetas estilo Canva */
 .card-dashboard {
   background: #00c16a;
   border-radius: 30px;
@@ -120,7 +121,7 @@ body {
   cursor: pointer;
   color: #000;
   font-weight: 600;
-  transition: .18s ease;
+  transition: 0.18s ease;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -130,6 +131,10 @@ body {
 .card-dashboard span {
   font-size: 1.8rem;
   margin-bottom: 6px;
+}
+
+.card-dashboard h3 {
+  font-size: 1rem;
 }
 
 .card-dashboard:hover {
