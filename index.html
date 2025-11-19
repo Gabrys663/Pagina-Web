@@ -15,16 +15,51 @@
 
     <main>
       <!-- PANTALLA INICIO -->
-      <section id="pantalla-inicio" class="pantalla activa">
-        <div class="tarjeta">
-          <h2>Menú principal</h2>
-          <p>Elige una opción:</p>
-          <div class="botones-menu">
-            <button class="boton" data-pantalla="pantalla-letras">Letras</button>
-            <!-- Más botones después: Créditos, Info, etc -->
-          </div>
-        </div>
-      </section>
+<section id="pantalla-inicio" class="pantalla activa">
+  <div class="dashboard">
+    <h2 class="titulo-dashboard">Gabrys & Luna</h2>
+
+    <div class="grid-dashboard">
+
+      <div class="card-dashboard" data-pantalla="pantalla-letras">
+        <span>🎵</span>
+        <h3>Canciones</h3>
+      </div>
+
+      <div class="card-dashboard" data-pantalla="pantalla-letras">
+        <span>📝</span>
+        <h3>Letras</h3>
+      </div>
+
+      <div class="card-dashboard">
+        <span>💿</span>
+        <h3>Álbum</h3>
+      </div>
+
+      <div class="card-dashboard">
+        <span>🌙</span>
+        <h3>Proyecto Luna</h3>
+      </div>
+
+      <div class="card-dashboard">
+        <span>🔥</span>
+        <h3>Proyecto Gabrys</h3>
+      </div>
+
+      <div class="card-dashboard">
+        <span>📊</span>
+        <h3>Estadísticas</h3>
+      </div>
+
+      <div class="card-dashboard">
+        <span>🔗</span>
+        <h3>Redes Sociales</h3>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
       <!-- PANTALLA LETRAS -->
       <section id="pantalla-letras" class="pantalla">
@@ -55,3 +90,4 @@ Elige una canción de la lista para ver la letra aquí.
   <script src="script.js"></script>
 </body>
 </html>
+
