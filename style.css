@@ -48,7 +48,7 @@ body {
   display: block;
 }
 
-/* Tarjeta genérica (se usa en letras) */
+/* Tarjeta genérica (letras) */
 .tarjeta {
   background: rgba(10, 10, 20, 0.9);
   border-radius: 18px;
@@ -68,7 +68,13 @@ body {
   font-size: 0.95rem;
   background: linear-gradient(135deg, #ff6b9f, #7b5cff);
   color: #fff;
-  transition: transform 0.1s ease, box-shadow 0.1s ease, opacity 0.2s ease;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.boton-volver {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 6px 14px;
 }
 
 .boton:hover,
@@ -77,21 +83,7 @@ body {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
 }
 
-.boton:active,
-.boton-volver:active {
-  transform: translateY(1px) scale(0.98);
-}
-
-/* Botón volver */
-.boton-volver {
-  background: transparent;
-  border-radius: 999px;
-  padding: 6px 14px;
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  margin-bottom: 10px;
-}
-
-/* Layout de letras */
+/* Layout letras */
 .layout-letras {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -99,53 +91,13 @@ body {
   margin-top: 15px;
 }
 
-.lista-canciones {
-  background: rgba(255, 255, 255, 0.03);
-  border-radius: 16px;
-  padding: 12px;
-}
-
-.lista-canciones h3 {
-  font-size: 1rem;
-  margin-bottom: 10px;
-}
-
-.lista-canciones .boton {
-  width: 100%;
-  text-align: left;
-  justify-content: flex-start;
-  margin-bottom: 8px;
-  font-size: 0.9rem;
-}
-
-/* Contenido letra */
-.contenido-letra {
-  background: rgba(0, 0, 0, 0.4);
-  border-radius: 16px;
-  padding: 12px;
-  border: 1px solid rgba(255, 255, 255, 0.06);
-}
-
-.contenido-letra h3 {
-  margin-bottom: 10px;
-}
-
-#texto-cancion {
-  white-space: pre-wrap;
-  font-family: inherit;
-  font-size: 0.95rem;
-  line-height: 1.5;
-  max-height: 400px;
-  overflow-y: auto;
-}
-
-/* ------ Dashboard tipo Canva ------ */
+/* ------------------ 🎨 DASHBOARD TIPO CANVA ------------------ */
 
 .dashboard {
   background: #050b10;
   border-radius: 30px;
   padding: 30px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.7);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
 }
 
 .titulo-dashboard {
@@ -154,14 +106,13 @@ body {
   font-weight: 700;
 }
 
-/* Grid de tarjetas */
+/* TARJETAS */
 .grid-dashboard {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 18px;
 }
 
-/* Tarjeta tipo plantilla Canva */
 .card-dashboard {
   background: #00c16a;
   border-radius: 30px;
@@ -169,7 +120,7 @@ body {
   cursor: pointer;
   color: #000;
   font-weight: 600;
-  transition: 0.18s ease;
+  transition: .18s ease;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -181,27 +132,19 @@ body {
   margin-bottom: 6px;
 }
 
-.card-dashboard h3 {
-  font-size: 1rem;
-}
-
 .card-dashboard:hover {
   transform: translateY(-3px);
   background: #00d37a;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
 }
 
-/* Responsive móvil */
+/* Responsive */
 @media (max-width: 768px) {
-  .layout-letras {
-    grid-template-columns: 1fr;
-  }
-
-  .dashboard {
-    padding: 20px;
-  }
-
   .grid-dashboard {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  .layout-letras {
+    grid-template-columns: 1fr;
   }
 }
