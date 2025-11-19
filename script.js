@@ -50,3 +50,17 @@ botonesCancion.forEach((boton) => {
     }
   });
 });
+
+const tarjetasDashboard = document.querySelectorAll(".card-dashboard");
+
+tarjetasDashboard.forEach((tarjeta) => {
+  tarjeta.addEventListener("click", () => {
+    const pantallaDestino = tarjeta.getAttribute("data-pantalla");
+
+    if (pantallaDestino) {
+      pantallas.forEach((p) => p.classList.remove("activa"));
+      document.getElementById(pantallaDestino).classList.add("activa");
+    }
+  });
+});
+
