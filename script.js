@@ -1,4 +1,3 @@
-// Cambiar de pantalla (como "diapositivas")
 const botonesPantalla = document.querySelectorAll("[data-pantalla]");
 const pantallas = document.querySelectorAll(".pantalla");
 
@@ -15,7 +14,7 @@ botonesPantalla.forEach((boton) => {
   });
 });
 
-// Letras de ejemplo (luego aquí ponemos tus canciones reales)
+// Letras de ejemplo
 const letras = {
   cancion1: {
     titulo: "Canción 1 - Ejemplo",
@@ -48,18 +47,5 @@ botonesCancion.forEach((boton) => {
       tituloCancion.textContent = info.titulo;
       textoCancion.textContent = info.texto;
     }
-  });
-});
-
-// Tarjetas del dashboard (para que funcionen como botones)
-const tarjetasDashboard = document.querySelectorAll(".card-dashboard");
-
-tarjetasDashboard.forEach((tarjeta) => {
-  tarjeta.addEventListener("click", () => {
-    const pantallaDestino = tarjeta.getAttribute("data-pantalla");
-    if (!pantallaDestino) return;
-
-    pantallas.forEach((p) => p.classList.remove("activa"));
-    document.getElementById(pantallaDestino).classList.add("activa");
   });
 });
